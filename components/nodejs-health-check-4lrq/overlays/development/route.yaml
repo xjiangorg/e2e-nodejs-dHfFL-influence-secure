@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: nodejs-health-check-4lrq
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-health-check-4lrq
+    app.kubernetes.io/part-of: e2e-nodejs
+  name: nodejs-health-check-4lrqhtdw
+spec:
+  path: /
+  port:
+    targetPort: 3001
+  to:
+    kind: Service
+    name: nodejs-health-check-4lrq
+    weight: null
+status: {}

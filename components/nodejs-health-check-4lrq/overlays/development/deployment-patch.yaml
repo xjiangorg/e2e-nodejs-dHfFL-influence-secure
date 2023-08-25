@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-4lrq
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/quay_xjiang/rhtap-demo-xpfy-tenant/e2e-nodejs/nodejs-health-check-4lrq@sha256:56584245d389d05e6b1b4dbd0a5e8266f1d1db84071085b43231c62b67a5e22f
+        name: my-nodejs
+        resources: {}
+status: {}
