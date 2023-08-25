@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: nodejs-health-check-4lrq
     spec:
       containers:
-      - image: nodejs-image:latest
+      - image: quay.io/quay_xjiang/rhtap-demo-xpfy-tenant/e2e-nodejs/nodejs-health-check-4lrq@sha256:56584245d389d05e6b1b4dbd0a5e8266f1d1db84071085b43231c62b67a5e22f
         name: my-nodejs
         ports:
         - containerPort: 3001
