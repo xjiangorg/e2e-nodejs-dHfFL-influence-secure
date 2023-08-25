@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    app.kubernetes.io/created-by: application-service
+    app.kubernetes.io/instance: nodejs-health-check-4lrq
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: nodejs-health-check-4lrq
+    app.kubernetes.io/part-of: e2e-nodejs
+  name: nodejs-health-check-4lrq
+spec:
+  ports:
+  - port: 3001
+    targetPort: 3001
+  selector:
+    app.kubernetes.io/instance: nodejs-health-check-4lrq
+status:
+  loadBalancer: {}
